@@ -192,8 +192,8 @@ int main()
     for( n = 0 ; n <= filemax ; n++)
     if ( idata[n][ 0 ] == 't' )
     if ( idata[n][ 1 ] == 'x' )
-    if ( idata[n][strlen( idata[n] )-1 ] != 'c' )
-    if ( idata[n][strlen( idata[n] )-2 ] != '.' )
+    if ( ( ( idata[n][strlen( idata[n] )-1 ] == 'c' ) 
+        && ( idata[n][strlen( idata[n] )-2 ] == '.' ) ) == 0 )
     {
           printf( "___________________________\n" );
 	  if ( fexist( idata[n] ) == 1 )
